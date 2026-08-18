@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Bhavana Realestate Agency | Hyderabad</title>
+  <meta content="Bhavana Realestate Agency &mdash; buy, sell, rent and invest in properties across Hyderabad." name="description"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="topbar">
+   <div class="container">
+    <div class="top-left">
+     <span>📍 H No. 8-2-293/82/A, Road No. 36, Jubilee Hills, Hyderabad - 500033</span>
+    </div>
+    <div class="top-right">
+     <span>&phone; +91 98765 43210</span>
+     <span>✉ info@bhavanarealestate.com</span>
+    </div>
+   </div>
+  </div>
+  <header class="header">
+   <div class="container">
+    <a class="logo" href="index.html">
+     <div class="logo-mark">⌂</div>
+     <div class="logo-text">
+      <b>BHAVANA</b>
+      <span>REALESTATE AGENCY</span>
+     </div>
+    </a>
+    <button class="menu" id="menuBtn">☰</button>
+    <nav class="nav" id="nav">
+     <a href="index.html">HOME</a>
+     <a href="properties.html">PROPERTIES</a>
+     <a href="services.html">SERVICES</a>
+     <a href="about.html">ABOUT US</a>
+     <a href="contact.html">CONTACT US</a>
+     <a class="cta" href="enquire.html">▣ ENQUIRE NOW</a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <section class="hero" id="home">
+    <div class="hero-inner">
+     <div class="hero-copy">
+      <h1>Find Your Perfect Property</h1>
+      <p>Buy. Sell. Rent. Invest with Confidence</p>
+     </div>
+     <form class="searchbox" id="searchForm">
+      <input id="location" placeholder="Enter Location"/>
+      <select id="type">
+       <option value="">All Type</option>
+       <option>Independent House</option>
+       <option>Apartment</option>
+       <option>Villa</option>
+      </select>
+      <input id="budget" placeholder="Min Price - Max Price"/>
+      <button>&telrec; SEARCH</button>
+     </form>
+    </div>
+   </section>
+   <section class="section agency-showcase" id="agency-showcase">
+    <div class="container">
+     <h2 class="section-title">BHAVANA REAL ESTATE AGENCY</h2>
+     <p class="section-subtitle">A professional space where buyers, sellers and investors can explore Hyderabad properties.</p>
+     <div class="agency-grid">
+      <div class="agency-item" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=1000&amp;q=82')">
+       <div class="agency-caption">Bhavana Agency Office</div>
+      </div>
+      <div class="agency-item" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=1000&amp;q=82')">
+       <div class="agency-caption">Reception &amp; Client Lounge</div>
+      </div>
+      <div class="agency-item" style="background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&amp;fit=crop&amp;w=1000&amp;q=82')">
+       <div class="agency-caption">Modern Consultation Space</div>
+      </div>
+      <div class="agency-item" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=1000&amp;q=82')">
+       <div class="agency-caption">Agency Workspace</div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="stats">
+    <div class="container">
+     <div class="stat">
+      <div class="stat-icon">⌂</div>
+      <div>
+       <b>500+</b>
+       <span>Properties Sold</span>
+      </div>
+     </div>
+     <div class="stat">
+      <div class="stat-icon">◆</div>
+      <div>
+       <b>1200+</b>
+       <span>Happy Clients</span>
+      </div>
+     </div>
+     <div class="stat">
+      <div class="stat-icon">▥</div>
+      <div>
+       <b>15+</b>
+       <span>Years Experience</span>
+      </div>
+     </div>
+     <div class="stat">
+      <div class="stat-icon">&checkmark;</div>
+      <div>
+       <b>Trusted</b>
+       <span>By Thousands</span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="properties">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <h2>FEATURED PROPERTIES</h2>
+       <p>Handpicked properties for you</p>
+      </div>
+      <button class="btn-outline" onclick="resetFilters()">VIEW ALL PROPERTIES &rarr;</button>
+     </div>
+     <div class="property-grid" id="propertyGrid">
+      <article class="card property" data-location="Jubilee Hills Hyderabad" data-type="Independent House">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 1.45 Cr</div>
+        <h3>4 BHK Independent House</h3>
+        <div class="loc">&target; Jubilee Hills, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 4 Beds</span>
+         <span>&fltns; 4 Baths</span>
+         <span>2500 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Jubilee Hills Independent House',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Madhapur Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag rent">FOR RENT</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">
+         ₹ 35,000
+         <small>
+          /mo
+         </small>
+        </div>
+        <h3>3 BHK Apartment</h3>
+        <div class="loc">&target; Madhapur, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 3 Beds</span>
+         <span>&fltns; 3 Baths</span>
+         <span>1800 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Madhapur 3 BHK Apartment',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Kondapur Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 85 Lakh</div>
+        <h3>2 BHK Apartment</h3>
+        <div class="loc">&target; Kondapur, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 2 Beds</span>
+         <span>&fltns; 2 Baths</span>
+         <span>1200 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Kondapur 2 BHK Apartment',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Gachibowli Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag rent">FOR RENT</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">
+         ₹ 28,000
+         <small>
+          /mo
+         </small>
+        </div>
+        <h3>2 BHK Apartment</h3>
+        <div class="loc">&target; Gachibowli, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 2 Beds</span>
+         <span>&fltns; 2 Baths</span>
+         <span>1100 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Gachibowli 2 BHK Apartment',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Gachibowli Hyderabad" data-type="Villa">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 2.10 Cr</div>
+        <h3>4 BHK Luxury Villa</h3>
+        <div class="loc">&target; Gachibowli Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 4 Beds</span>
+         <span>&fltns; 4 Baths</span>
+         <span>3200 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Gachibowli Luxury Villa',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Kokapet Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 1.15 Cr</div>
+        <h3>3 BHK Premium Apartment</h3>
+        <div class="loc">&target; Kokapet Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 3 Beds</span>
+         <span>&fltns; 3 Baths</span>
+         <span>1950 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Kokapet Premium Apartment',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Banjara Hills Hyderabad" data-type="Independent House">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 1.75 Cr</div>
+        <h3>4 BHK Independent House</h3>
+        <div class="loc">&target; Banjara Hills Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 4 Beds</span>
+         <span>&fltns; 4 Baths</span>
+         <span>2700 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Banjara Hills Family Home',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Nanakramguda Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag rent">FOR RENT</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">
+         ₹ 42,000
+         <small>
+          /mo
+         </small>
+        </div>
+        <h3>3 BHK Modern Apartment</h3>
+        <div class="loc">&target; Nanakramguda Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 3 Beds</span>
+         <span>&fltns; 3 Baths</span>
+         <span>1850 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Nanakramguda Modern Flat',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Manikonda Hyderabad" data-type="Villa">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 1.55 Cr</div>
+        <h3>4 BHK Family Villa</h3>
+        <div class="loc">&target; Manikonda Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 4 Beds</span>
+         <span>&fltns; 4 Baths</span>
+         <span>2900 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Manikonda Family Villa',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Hitech City Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag rent">FOR RENT</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">
+         ₹ 38,000
+         <small>
+          /mo
+         </small>
+        </div>
+        <h3>2 BHK Executive Apartment</h3>
+        <div class="loc">&target; Hitech City Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 2 Beds</span>
+         <span>&fltns; 2 Baths</span>
+         <span>1350 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Hitech City Executive Apartment',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Tellapur Hyderabad" data-type="Villa">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 1.35 Cr</div>
+        <h3>3 BHK Garden Villa</h3>
+        <div class="loc">&target; Tellapur Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 3 Beds</span>
+         <span>&fltns; 3 Baths</span>
+         <span>2400 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Tellapur Garden Villa',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <article class="card property" data-location="Kukatpally Hyderabad" data-type="Apartment">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+        <button class="heart" onclick="toggleHeart(this)">♡</button>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 72 Lakh</div>
+        <h3>2 BHK Spacious Apartment</h3>
+        <div class="loc">&target; Kukatpally Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 2 Beds</span>
+         <span>&fltns; 2 Baths</span>
+         <span>1180 Sq.ft</span>
+        </div>
+        <button class="details" onclick="openProperty('Kukatpally Spacious Flat',this)">VIEW DETAILS</button>
+       </div>
+      </article>
+      <div class="no-results" id="noResults">No matching properties found. Try another location or property type.</div>
+     </div>
+    </div>
+   </section>
+   <section class="section about" id="about">
+    <div class="container about-grid">
+     <div class="about-image"></div>
+     <div class="about-copy">
+      <h2>ABOUT BHAVANA REALESTATE AGENCY</h2>
+      <p>We help families and investors find practical properties in well-connected Hyderabad neighbourhoods. Our approach is simple: clear information, verified listings and dependable support from enquiry to closing.</p>
+      <p>Whether you are buying your first home, looking for a rental, selling a property or exploring an investment, our team keeps the process straightforward.</p>
+      <div class="checks">
+       <div class="check">Verified Property Listings</div>
+       <div class="check">Transparent Pricing</div>
+       <div class="check">Local Market Knowledge</div>
+       <div class="check">End-to-End Assistance</div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="services">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <h2>OUR SERVICES</h2>
+       <p>Complete real-estate assistance under one roof</p>
+      </div>
+     </div>
+     <div class="services-grid">
+      <div class="service">
+       <div class="ico">⌂</div>
+       <h3>Property Buying</h3>
+       <p>Shortlisted homes and apartments based on your location, budget and requirements.</p>
+      </div>
+      <div class="service">
+       <div class="ico">▣</div>
+       <h3>Property Selling</h3>
+       <p>Market positioning, listing support and assistance through negotiation and closure.</p>
+      </div>
+      <div class="service">
+       <div class="ico">⌂</div>
+       <h3>Rental Services</h3>
+       <p>Residential rental options with convenient viewing and documentation support.</p>
+      </div>
+      <div class="service">
+       <div class="ico">▥</div>
+       <h3>Investment Advisory</h3>
+       <p>Location-focused guidance to help compare property opportunities and long-term value.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="featured-properties">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <h2>FEATURED PROPERTIES</h2>
+       <p>Explore carefully selected homes, apartments, villas and independent houses.</p>
+      </div>
+      <a class="btn outline" href="properties.html">VIEW ALL PROPERTIES</a>
+     </div>
+     <div class="property-grid">
+      <article class="card property">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 1.45 Cr</div>
+        <h3>4 BHK Independent House</h3>
+        <div class="loc">&target; Jubilee Hills, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 4 Beds</span>
+         <span>&fltns; 4 Baths</span>
+         <span>2500 Sq.ft</span>
+        </div>
+        <a class="details" href="properties.html">VIEW DETAILS</a>
+       </div>
+      </article>
+      <article class="card property">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag rent">FOR RENT</span>
+       </div>
+       <div class="card-body">
+        <div class="price">
+         ₹ 35,000
+         <small>
+          /mo
+         </small>
+        </div>
+        <h3>3 BHK Apartment</h3>
+        <div class="loc">&target; Madhapur, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 3 Beds</span>
+         <span>&fltns; 2 Baths</span>
+         <span>1650 Sq.ft</span>
+        </div>
+        <a class="details" href="properties.html">VIEW DETAILS</a>
+       </div>
+      </article>
+      <article class="card property">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 2.10 Cr</div>
+        <h3>4 BHK Luxury Villa</h3>
+        <div class="loc">&target; Kokapet, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 4 Beds</span>
+         <span>&fltns; 4 Baths</span>
+         <span>3200 Sq.ft</span>
+        </div>
+        <a class="details" href="properties.html">VIEW DETAILS</a>
+       </div>
+      </article>
+      <article class="card property">
+       <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=900&amp;q=82')">
+        <span class="tag">FOR SALE</span>
+       </div>
+       <div class="card-body">
+        <div class="price">₹ 92 Lakh</div>
+        <h3>3 BHK Premium Flat</h3>
+        <div class="loc">&target; Gachibowli, Hyderabad</div>
+        <div class="meta">
+         <span>&fltns; 3 Beds</span>
+         <span>&fltns; 3 Baths</span>
+         <span>1850 Sq.ft</span>
+        </div>
+        <a class="details" href="properties.html">VIEW DETAILS</a>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="contact">
+    <div class="container contact-grid">
+     <div class="contact-info">
+      <h2>LET'S FIND YOUR PROPERTY</h2>
+      <p>Tell us what you are looking for and our enquiry workflow will guide you to the right listing.</p>
+      <div class="contact-item">
+       <b>Office</b>
+       <span>
+        H No. 8-2-293/82/A, Road No. 36
+        <br/>
+        Jubilee Hills, Hyderabad - 500033
+       </span>
+      </div>
+      <div class="contact-item">
+       <b>Phone</b>
+       <span>+91 98765 43210</span>
+      </div>
+      <div class="contact-item">
+       <b>Email</b>
+       <span>info@bhavanarealestate.com</span>
+      </div>
+      <div class="contact-item">
+       <b>Office Hours</b>
+       <span>Mon - Sat: 9:30 AM - 6:30 PM</span>
+      </div>
+     </div>
+     <form class="form" id="contactForm">
+      <input placeholder="Your Name" required=""/>
+      <input placeholder="Phone Number" required="" type="tel"/>
+      <input placeholder="Email Address" required="" type="email"/>
+      <select required="">
+       <option value="">Interested In</option>
+       <option>Buying</option>
+       <option>Selling</option>
+       <option>Renting</option>
+       <option>Investment</option>
+      </select>
+      <textarea class="full" placeholder="Tell us about the property you need..." required="">
+                        </textarea>
+      <button class="submit full">SEND ENQUIRY</button>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <span>&copy; 2026 Bhavana Realestate Agency. Demo website for academic use.</span>
+    <span>Buy &bull; Sell &bull; Rent &bull; Invest</span>
+   </div>
+  </footer>
+  <div class="modal" id="modal">
+   <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <img alt="Property" id="modalImg"/>
+    <h2 id="modalTitle" style="color:#071a35;margin:18px 0 8px"></h2>
+    <p id="modalText" style="color:#606875;line-height:1.6"></p>
+    <button class="submit" onclick="closeModal();document.querySelector('#contact').scrollIntoView()" style="margin-top:18px">ENQUIRE ABOUT THIS PROPERTY</button>
+   </div>
+  </div>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
